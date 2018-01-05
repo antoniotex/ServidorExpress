@@ -6,16 +6,16 @@ var app = express();
 //informa para o EXPRESS que o EJS será o motor de views
 app.set('view engine', 'ejs')
 
-app.get('/tecnologia', function(req, res){
-	res.render('secao/tecnologia');
+app.get('/formulario_inclusao_noticia', function(req, res){
+	res.render('admin/form_add_noticia');
 });
 
-app.get('/moda', function(req, res){
-	res.render('secao/moda');
+app.get('/', function(req, res){
+	res.render('home/index');
 });
 
-app.get('/carros', function(req, res){
-	res.render('secao/carros');
+app.get('/noticias', function(req, res){
+	res.render('noticias/noticias');
 });
 
 
